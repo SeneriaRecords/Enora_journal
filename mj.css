@@ -1363,6 +1363,24 @@ color: #9f9f9f8a; /* Change la couleur de la barre séparatrice */
 
 
 
+.social-icons-fete25 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-icons-fete25 img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons-fete25 img:hover {
+  transform: scale(1.1);
+}
+
+
+
 footer {
   position: fixed; /* Fixe le footer au bas de l'écran */
   bottom: 0; /* Aligne le footer tout en bas */
