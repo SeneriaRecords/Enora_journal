@@ -77,26 +77,31 @@ html, body {
   position: relative;
   z-index: 1;
   
-  
+
 }
 
 
-@media (max-width: 768px) {
-  .contenu {
-    display: flex;
-    flex-direction: column;
-  justify-content: center; /* Centrage horizontal */
-  align-items: center;     /* Centrage vertical */
-  text-align: center;
 
+/* Par défaut : cacher mobile */
+.bg-mobile {
+  display: none;
+}
 
-  margin-left: 20px; /*déplacement du contenu du site à titre exceptionnel*/
-
-
-
-
+/* Sur mobile : cacher desktop et afficher mobile */
+@media screen and (max-width: 768px) {
+  .bg-desktop {
+    display: none;
+  }
+  .bg-mobile {
+    display: block;
+  }
+  .background-fixe img {
+    object-position: 30% center; /* décale légèrement à droite */
+    
   }
 }
+
+
 
 
 
