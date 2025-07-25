@@ -633,23 +633,22 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* L'ombre est uniquement sur l'image */
 
 /* --- CARROUSEL --- */
 
-.message-mobile {
-  display: none; /* caché par défaut */
-  text-align: center; /* centre le texte */
-  font-style: italic; /* italique */
-  opacity: 0.75; /* opacité 75% */
-  font-size: 15px;
-  margin: 20px 0; /* espace autour, ajuste si besoin */
+.texte-mobile {
+  display: none;
+  font-style: italic;
+  opacity: 0.75;
 }
-
 
 /* Affiche uniquement sur mobile */
 @media screen and (max-width: 768px) {
-  .message-mobile {
+  .texte-desktop {
+    display: none;
+  }
+  .texte-mobile {
     display: block;
   }
-
 }
+
 
 
 
