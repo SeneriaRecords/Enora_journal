@@ -634,6 +634,13 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* L'ombre est uniquement sur l'image */
 /* --- CARROUSEL --- */
 
 
+/* Affiche uniquement sur mobile */
+@media screen and (max-width: 768px) {
+  .message-mobile {
+    display: block;
+  }
+
+
 
 
 .video-container {
