@@ -472,6 +472,8 @@ article {
   display: block;
   cursor: pointer; /* 👉 Curseur "doigt" uniquement */
   border-radius: 6px; /* 👈 Courbure des coins */
+    margin: 0 auto; /* 👈 Centre l'image */
+
 
 
 }
