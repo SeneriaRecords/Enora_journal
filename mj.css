@@ -356,6 +356,7 @@ font-size: 14PX;
 
 }
 
+
 .message_du_jour {
   padding: 40px; /* Espacement intérieur pour ne pas que le texte touche la bordure */
   border-radius: 80px; /* Arrondir les coins de l'encadrement */
@@ -372,7 +373,7 @@ font-size: 14PX;
 
   backdrop-filter: blur(4px);          /* Flou de l'arrière-plan */
   -webkit-backdrop-filter: blur(4px);  /* Pour Safari */
-  border-radius: 12px;                   /* Coins arrondis pour un meilleur rendu */
+  border-radius: 1px;                   /* Coins arrondis pour un meilleur rendu */
   padding: 9px;
 
   width: 600px;      /* Largeur fixe */
