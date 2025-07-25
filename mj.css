@@ -290,13 +290,14 @@ h1.fixed.show {
 
 
 
+
 /* Lors du scroll, on applique un style plus petit et on diminue l'opacité */
 .watermark h1.fixed {
   font-size: large; /* Taille plus petite */
   top: 11vh; /* Remonter légèrement */
   opacity: 0.5; /* Réduire l'opacité à 50% */
   text-decoration: none;
-  filter: blur(2px);
+  filter: blur(10px);
   
 }
 
