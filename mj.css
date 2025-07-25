@@ -636,11 +636,6 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* L'ombre est uniquement sur l'image */
 .message-mobile {
   display: none; /* caché par défaut */
   position: fixed; /* fixe sur l'écran */
-  background: rgba(0, 0, 0, 0.6); /* fond semi-transparent */
-  color: white;
-  padding: 10px 15px;
-  border-radius: 8px;
-  z-index: 9999;
 }
 
 /* Affiche uniquement sur mobile */
