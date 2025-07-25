@@ -845,12 +845,12 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* L'ombre est uniquement sur l'image */
 
 
 .nav.prev {
-  margin-top: 300px;
+  margin-top: 400px;
   left: 45px;
 }
 
 .nav.next {
-  margin-top: 300px;
+  margin-top: 400px;
   right: 45px;
 }
 
