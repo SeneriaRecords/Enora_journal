@@ -110,15 +110,18 @@ html, body {
 
 
 
-
-
-
 .entrance-sentence {
   display: flex;
   justify-content: center; /* Centrage horizontal */
   align-items: center;     /* Centrage vertical */
   text-align: center;
 
+}
+
+
+.nouveaute-italic p {
+    font-style: italic ;
+    font-weight: normal;
 }
 /* Spécial mobile */
 
@@ -180,7 +183,7 @@ nav ul li a {
   font-size: medium;
   text-transform: uppercase;
   font-family: 'Roboto Mono', monospace;
-  font-weight: 200; /* Léger */
+  font-weight: 400; /* Léger */
   transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
@@ -196,7 +199,7 @@ nav ul li a:hover {
   
 }
 
-#pensée {
+#nouveau {
   scroll-margin-top: -90px; /* Ajuste cette valeur en fonction de la hauteur de ta navbar */
 }
 
@@ -348,14 +351,26 @@ word-spacing: -6px; /* Réduit l'espace entre les mots */
 
 }
 
-.pensée_titre_H1 {
+#stories article {
+    text-align: center; /* Centre tout le texte et les éléments inline dans cette section */
+}
+
+#stories h3 {
+    display: inline-block; /* Permet au titre de répondre au text-align: center */
+    width: 100%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Optionnel : pour le style */
+}
+
+.nouveau_titre_H1 {
 
 font-style: normal;
 
 
 }
 
-.pensée_titre_h2 {
+.nouveau_titre_h2 {
 
 font-size: 14PX;
 
@@ -443,8 +458,6 @@ mark2 {
   padding: 0.1em 0.3em; /* Espacement pour que le fond ne touche pas le texte */
   border-radius: 2px; /* Un léger arrondi des coins */
 }
-
-
 
 
 
@@ -654,11 +667,26 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* L'ombre est uniquement sur l'image */
 
 
 
-
 .video-container {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* C'est le ratio magique 16:9 (9 / 16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 
@@ -1451,6 +1479,3 @@ footer p {
 
   
 }
-
-
-
