@@ -377,6 +377,19 @@ font-size: 14PX;
 
 }
 
+/* Cache le texte proprement pour l'œil humain, mais visible pour Google */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 
 .message_du_jour {
   padding: 40px; /* Espacement intérieur pour ne pas que le texte touche la bordure */
