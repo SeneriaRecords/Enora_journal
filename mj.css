@@ -142,14 +142,14 @@ html, body {
 }
 
 /* Version Spéciale Mobile (Écrans de moins de 768px) */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
     .cover-container img, 
     .cover-img, 
     .cover-image {
-        width: 800px !important;   /* Taille mobile adaptée */
-        height: 800px !important;
-        max-width: 800px !important;
-        max-height: 800px !important;
+        width: 600px !important;   /* Taille mobile adaptée */
+        height: 600px !important;
+        max-width: 600px !important;
+        max-height: 600px !important;
         
         /* Halo plus léger sur mobile pour la discretion */
         box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.12) !important;
