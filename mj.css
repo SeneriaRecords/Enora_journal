@@ -102,33 +102,54 @@ html, body {
 }
 
 
-/* --- CORRECTION POCCHETTE EP --- */
+/* ---  POCCHETTE EP --- */
+/* ========================================================
+   DISPOSITIF COVER - TAILLE MOYENNE, CENTRÉ, EFFET HALO DOUX
+   ======================================================== */
+
 .cover-container {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
+    margin: 30px auto !important; /* Espacement vertical un peu plus grand */
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
 }
 
-.cover-img {
-    width: 250px !important;       /* Taille stricte sur ordinateur */
-    height: 250px !important;      /* Force le carré */
-    max-width: 250px !important;
+/* On cible l'image de manière ultra-stricte pour empêcher le reste du CSS de la faire grossir */
+.cover-container img, 
+.cover-img, 
+.cover-image {
+    width: 500px !important;       /* Taille agrandie (comparé aux 280px précédents) */
+    height: 500px !important;      /* Maintient le format carré */
+    max-width: 500px !important;
+    max-height: 500px !important;
     object-fit: cover !important;
-    border-radius: 10px !important;
+    border-radius: 8px !important; /* Bordure arrondie */
+    
+    /* Lumière blanche très douce et subtile (halo léger) */
+    box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.15) !important;
+    
+    display: block !important;
+    margin: 0 auto !important;
+    transition: box-shadow 0.3s ease !important; /* Pour un effet au survol */
 }
 
-/* Version Mobile friendly */
+/* Version Spéciale Mobile (Écrans de moins de 768px) */
 @media screen and (max-width: 768px) {
-    .cover-img {
-        width: 180px !important;   /* Plus petite sur téléphone */
-        height: 180px !important;
-        max-width: 180px !important;
+    .cover-container img, 
+    .cover-img, 
+    .cover-image {
+        width: 200px !important;   /* Taille mobile adaptée */
+        height: 200px !important;
+        max-width: 200px !important;
+        max-height: 200px !important;
+        
+        /* Halo plus léger sur mobile pour la discretion */
+        box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.12) !important;
     }
 }
-
 
 
 
