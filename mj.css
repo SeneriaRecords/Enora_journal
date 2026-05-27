@@ -107,15 +107,15 @@ html, body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0 20px; /* Évite que l'image colle aux bords sur mobile */
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
 .cover-img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 280px; /* Taille exacte pour reproduire le rendu de ta capture */
     height: auto;
-    max-height: 500px; /* Limite la hauteur pour pas que ça bouffe tout l'écran sur PC */
-    border-radius: 10px; /* Ta bordure arrondie à 10px */
+    border-radius: 10px;
     object-fit: contain;
 }
 
