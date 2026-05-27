@@ -113,51 +113,46 @@ html, body {
    ======================================================== */
 
 .cover-container {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 100% !important;
-    margin: 30px auto !important; /* Espacement vertical un peu plus grand */
-    padding: 0 20px !important;
-    box-sizing: border-box !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px auto; /* Espacement vertical un peu plus grand */
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-/* On cible l'image de manière ultra-stricte pour empêcher le reste du CSS de la faire grossir */
+/* On cible l'image et on la rend responsive par défaut */
 .cover-container img, 
 .cover-img, 
 .cover-image {
-    width: 500px !important;       /* Taille agrandie (comparé aux 280px précédents) */
-    height: 500px !important;      /* Maintient le format carré */
-    max-width: 500px !important;
-    max-height: 500px !important;
-    object-fit: cover !important;
-    border-radius: 8px !important; /* Bordure arrondie */
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Taille max sur ordinateur */
+    aspect-ratio: 1 / 1; /* Force le format carré proprement */
+    object-fit: cover;
+    border-radius: 8px; /* Bordure arrondie */
     
     /* Lumière blanche très douce et subtile (halo léger) */
-    box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.15);
     
-    display: block !important;
-    margin: 0 auto !important;
-    transition: box-shadow 0.3s ease !important; /* Pour un effet au survol */
+    display: block;
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Pour un effet au survol */
 }
 
 /* Version Spéciale Mobile (Écrans de moins de 768px) */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     .cover-container img, 
     .cover-img, 
     .cover-image {
-        width: 600px !important;   /* Taille mobile adaptée */
-        height: 600px !important;
-        max-width: 600px !important;
-        max-height: 600px !important;
+        /* L'image va prendre automatiquement la largeur du téléphone moins le padding (sans dépasser) */
+        max-width: 85%; /* Évite qu'elle colle trop aux bords du téléphone */
         
-        /* Halo plus léger sur mobile pour la discretion */
-        box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.12) !important;
+        /* Halo plus léger sur mobile pour la discrétion */
+        box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.12);
     }
 }
-
-
-
 
 
 .entrance-sentence {
