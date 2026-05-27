@@ -103,22 +103,26 @@ html, body {
 
 
 .cover-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
 }
 
 .cover-img {
-    width: 100%;
-    max-width: 280px; /* Taille exacte pour reproduire le rendu de ta capture */
-    height: auto;
-    border-radius: 10px;
-    object-fit: contain;
+    width: 250px !important; /* Taille fixe stricte sur PC pour ne pas envahir l'écran */
+    height: 250px !important; /* Force le format carré */
+    object-fit: cover !important;
+    border-radius: 10px !important;
 }
 
+/* Version Mobile friendly (Écrans de moins de 768px) */
+@media (max-width: 768px) {
+    .cover-img {
+        width: 180px !important; /* Plus petit sur téléphone pour rester discret */
+        height: 180px !important;
+    }
+}
 
 
 
