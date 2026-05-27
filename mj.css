@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    position: relative !important;
+}
 
 
 
@@ -141,10 +146,10 @@ html, body {
     .cover-container img, 
     .cover-img, 
     .cover-image {
-        width: 200px !important;   /* Taille mobile adaptée */
-        height: 200px !important;
-        max-width: 200px !important;
-        max-height: 200px !important;
+        width: 450px !important;   /* Taille mobile adaptée */
+        height: 450px !important;
+        max-width: 450px !important;
+        max-height: 450px !important;
         
         /* Halo plus léger sur mobile pour la discretion */
         box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.12) !important;
