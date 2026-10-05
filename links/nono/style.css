@@ -27,7 +27,7 @@ body {
     height: 135vh;
     background: 
         linear-gradient(to bottom, transparent 60%, #000 100%),
-        url('../images/COVER NONO.jpg') center/cover no-repeat;
+        url('../../images/COVER NONO.jpg') center/cover no-repeat;
 }
 
 
@@ -167,7 +167,7 @@ footer {
         height: 60vh; /* Ajustable selon la hauteur voulue sur mobile */
         background: 
             linear-gradient(to bottom, transparent 60%, #000 100%),
-            url('../images/COVER NONO 2 Mobile.jpg') center/cover no-repeat;
+            url('../../images/COVER NONO 2 Mobile.jpg') center/cover no-repeat;
     }
 
     h1 { 
