@@ -42,15 +42,18 @@ body {
 }
 
 h1 {
-    font-family: 'Alexendria', sans-serif;
-    color: #FF0000;
-    font-size: 30px;
-    font-weight: bold;
+   
+    font-family: 'Anton', sans-serif;
+    color: #fa3333;
+    font-size: 40px;
+    font-weight: unset;
     text-transform: lowercase;
     letter-spacing: 3px; /* Ton espacement  */
     margin-bottom: 10px;
     margin-top: 50px;
 
+
+    
 
     
     /* LA SOLUTION ICI */
