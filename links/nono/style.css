@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap');
+
+:root {
+    --main-white: #ffffff;
+    --bg-black: #000000;
+    --gray-light: #f4f4f4;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Basteleur-Moonlight', sans-serif;
+}
+
+
+body {
+    background-color: var(--bg-black);
+    color: var(--main-white);
+    line-height: 1.6;
+}
+
+/* IMAGE HERO - L'impact visuel */
+.hero {
+   width: 100%;
+    height: 135vh;
+    background: 
+        linear-gradient(to bottom, transparent 60%, #000 100%),
+        url('../images/COVER NONO.jpg') center/cover no-repeat;
+}
+
+
+
+.content {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    
+}
+
+h1 {
+    font-family: 'Alexendria', sans-serif;
+    color: #FF0000;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: lowercase;
+    letter-spacing: 3px; /* Ton espacement  */
+    margin-bottom: 10px;
+    margin-top: 50px;
+
+
+    
+    /* LA SOLUTION ICI */
+    padding-left: 10px; /* Doit être identique au letter-spacing */
+    text-align: center;
+    width: 100%;
+    /* hover */
+    transition: color 0.4s ease; /* Rend le passage au blanc tout doux */
+    cursor: default; /* Garde le curseur normal ou mets 'pointer' si tu veux qu'il soit cliquable */
+
+}
+
+h1:hover {
+    color: #ffffff; /* Change en blanc au survol */
+}
+
+.subtitle {
+    color: white;
+    font-family: 'Basteleur-Moonlight', 'Arial', sans-serif; /* Même police que le lien de retour */    font-size: 0.7rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.9;
+    font-size: 15px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+/* GRILLE DE LIENS */
+.links-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+
+.link-item {
+    font-family: 'Helvetica', sans-serif; /* Même police que le lien de retour */    font-size: 0.7rem;
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: 1px solid var(--main-white);
+    border-radius: 8px; /* <-- C'est ici qu'on ajoute l'arrondi */
+    color: var(--main-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    transition: all 0.3s ease;
+    
+}
+
+/* HOVER EFFECT */
+.link-item:hover {
+    background-color: var(--main-white);
+    color: var(--bg-black);
+    transform: scale(1.06);
+}
+
+/* BOUTON CLIP (MIS EN AVANT) */
+.cta {
+    background-color: var(--main-white);
+    color: var(--bg-black);
+    font-weight: bold;
+    /* Ajout du cadre rouge */
+    border: 2px solid #fd4040; 
+}
+
+.cta:hover {
+    border-color: #FF0000; /* Garde la bordure rouge au survol */
+    background-color: #FF0000; /* Optionnel : le bouton devient rouge au survol */
+    color: white; /* Optionnel : le texte devient blanc au survol */
+}
+
+.link-back {
+    margin-top: 20px;
+    color: var(--main-white);
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.4;
+}
+
+.link-back:hover {
+    opacity: 1;
+}
+
+
+
+.label-logo {
+    width: 45px; /* Taille signature, très élégante */
+    height: auto;
+    margin: 40px auto 10px auto; /* Espace bien le logo des boutons */
+    display: block;
+    opacity: 0.7; /* Un peu transparent pour ne pas voler la vedette à "enora" */
+    transition: opacity 0.2s ease;
+}
+
+.label-logo:hover {
+    opacity: 1; /* S'illumine au survol */
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    opacity: 0.3;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 600px) {
+    .hero {
+        height: 60vh; /* Ajustable selon la hauteur voulue sur mobile */
+        background: 
+            linear-gradient(to bottom, transparent 60%, #000 100%),
+            url('../images/COVER NONO 2 Mobile.jpg') center/cover no-repeat;
+    }
+
+    h1 { 
+        font-size: 1.2rem;
+        word-break: break-word;
+    }
+
+    .subtitle { 
+        font-size: 15px;
+        letter-spacing: 4.5px; /* Ton espacement  */
+
+    }
+
+}
